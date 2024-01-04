@@ -1,0 +1,74 @@
+@font-face {
+    font-family: sora;
+    src: url(./static/Sora-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100dvh;
+    display: flex;
+    font-family: sora;
+    color: #6C727F;
+}
+.container{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    display: grid;
+    max-width: 368px;
+    border-radius: 16px;
+    box-shadow: 0 0 5px 5px #E5EAF0;
+    box-shadow: 0 0 10px 3px  rgba(17, 23, 41, 0.25);
+}
+.main_card,
+.author{
+    padding: 16px;
+    padding-bottom: 20px;
+}
+.main_card{
+    display: grid;
+    gap: 16px;
+}
+.img img{
+    border-radius: 16px;
+    height: 152px;
+}
+.tab{
+    background-color: #E6D6FC;
+    width: fit-content;
+    border-radius: 8px;
+}
+.tab span{
+    color: #883AE1;
+    padding: 6px 12px;
+    font-size: 10px;
+    vertical-align: middle;
+    font-weight: bold;
+}
+.content .title{
+    font-size: 18px;
+    margin-bottom: 6px;
+    color: #20293A;
+}
+.content .para{
+    font-size: 14px;
+}
+hr{
+    border-color: #6c727f4e;
+}
+.author p{
+    font-size: 12px;
+    margin-top: 4px;
+}
+@media screen and (max-width:640px) {
+    .card{
+        max-width: 65%;
+    }
+}
